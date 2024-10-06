@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES6", // ! Qual versão vai ser compilado com os recursos JS.
+        "module": "CommonJS",
+        "outDir": "./assets/js", // ! Saida dos arquivos compilados
+        "moduleResolution": "Node",
+    //!	"lib": ["DOM","ESNext"],
+        "strict": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "incremental": true,
+        "skipLibCheck": true,
+        "noEmitOnError": true, // ! Verificar antes dos arquivo ser compilados
+        "removeComments": true,
+        "esModuleInterop": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true, // ! Decorators esta ativados.
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+// !		"src/js/**/*",
+        "assets/ts/**/*"
+    ]
+}

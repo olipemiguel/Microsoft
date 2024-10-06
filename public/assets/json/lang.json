@@ -1,0 +1,32 @@
+{
+    "country":{
+        "pt":["BR","PT","AO","MZ","GW","CV","ST","TL"],
+        "en": ["US","GB","CA","AU","NZ","IE","ZA","JM","TT","SG","PH","IN"],
+        "es":["AR","BO","CL","CO","CR","CU","DO","EC","ES","GQ","GT","HN","MX","NI","PA","PY","PE","SV","UY","VE"]
+    },
+    "title":{
+        "pt":"Entre na sua conta Microsoft",
+        "en":"Sign in to your Microsoft account",
+        "es": "Inicia sesión en tu cuenta de Microsoft"
+    },
+    "mail":{
+        "pt":["Entrar","Continuar para Outlook","Email, Telefone ou Skype","Não tem uma conta? Crie uma!","Avançar","Essa conta Microsoft não existe. Insira uma conta diferente ou obtenha uma nova."],
+        "en":["Login","Continue to Outlook","Email, Phone or Skype","Don't have an account? Create one!","Next","This Microsoft account doesn't exist. Enter a different account or get a new one."],
+        "es":["Entrar","Continuar a Outlook","Email, teléfono o Skype","¿No tienes una cuenta? ¡Crea una!","Proximo","Esta cuenta de Microsoft no existe. Ingresa una cuenta diferente o crea una nueva."]
+    },
+    "pass":{
+        "pt":["Insira a senha","Senha","Esqueceu a senha?","Outras maneiras de entrar","Entrar"],
+        "en":["Enter password","Password","Forgot your password?","Other ways to enter","Enter"],
+        "es":["Introducir contraseña","Contraseña","¿Olvidaste tu contraseña?","Otras formas de participar","Ingresar"]
+    },
+    "info":{
+        "pt": ["Detalhes da solução de problemas","Se você entrar em contato com o administrador, envie estas informações para ele.","Copiar informações para a área de transferência","Copiado"],
+        "en": ["Troubleshooting Details","If you contact the administrator, send this information to him.","Copy information to clipboard","Copied"],
+        "es": ["Detalles de solución de problemas","Si se comunica con su administrador, le envía esta información.","Copiar información al portapapeles","Copiado"]
+    },
+    "footer":{
+        "pt": ["Opções de entrada","Termos de uso","Privacidade e cookies"],
+        "en": ["Input options","Terms of Use","Privacy & Cookies"],
+        "es": ["Opciones de entrada","Términos de uso","Privacidad y cookies"]
+    }
+}

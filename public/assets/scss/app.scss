@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.app-box {
+  width: 100dvw;
+  height: calc(100vh - 28px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .app-container {
+    width: calc(28.75rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    .app-header {
+      width: 10.7rem;
+      .app-header-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .app-content {
+      width: 93.5%;
+      height: calc(21.5rem+2.6rem);
+      padding: 2.6rem;
+      background-color: var(--app-main-box-background-color);
+      box-shadow: var(--app-main-box-shadow) 0px 2px 6px;
+      display: inherit;
+      flex-direction: column;
+      gap: 1.57rem;
+      .app-content-icon {
+        width: 6.7rem;
+        .app-content-fig {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .app-content-mail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.98rem;
+        .app-content-mail-top {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 0.21rem;
+          margin-bottom: 0.23rem;
+          .app-content-mail-title {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(1.23rem, 1.5vh, 0.44rem);
+          }
+          .app-content-mail-sub-title {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.67rem, 1.5vh, 0.44rem);
+          }
+        }
+        .app-content-mail-center {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 0.23rem;
+          .app-content-mail-input-fail {
+            display: none;
+            font-size: clamp(0.73rem, 1.5vh, 0.5rem);
+            color: var(--app-main-input-span-fail-color);
+            .app-content-mail-input-span {
+              color: var(--app-main-input-span-color);
+              text-decoration: none;
+              cursor: pointer;
+              &:active,
+              &:hover {
+                color: var(--app-main-input-span-color-hover);
+                text-decoration: underline;
+              }
+            }
+          }
+          #email {
+            width: 100%;
+            height: 2.1rem;
+            border: unset;
+            outline: none;
+            border-radius: unset;
+            border-bottom: 1px solid var(--app-main-input-border-color);
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.73rem, 1.5vh, 0.5rem);
+            line-height: 1.2;
+            padding: 0.14rem;
+            margin-bottom: 0.78rem;
+            &:active,
+            &:focus {
+              border-color: var(--app-main-input-border-color-hover);
+            }
+          }
+          .app-content-mail-input {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.73rem, 1.5vh, 0.5rem);
+            .app-content-mail-input-span {
+              color: var(--app-main-input-span-color);
+              text-decoration: none;
+              cursor: pointer;
+              &:active,
+              &:hover {
+                color: var(--app-main-input-span-color-hover);
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+        .app-content-mail-bottom {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-top: 1.3rem;
+          .app-content-mail-btn {
+            cursor: pointer;
+            color: var(--app-footer-color);
+            font-size: clamp(0.84rem, 1.5vh, 0.54rem);
+            letter-spacing: 0.03rem;
+            font-family: "Roboto", "Poppins", sans-serif;
+            font-weight: 400;
+            padding: 0.62rem 2.3rem;
+            background-color: var(--app-main-input-span-color);
+            border: 0px;
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: var(--app-main-input-span-color-hover);
+              transition: background-color 0.35s ease-in-out;
+            }
+          }
+        }
+      }
+      .app-content-pass-hover {
+        display: none;
+      }
+      .app-content-pass {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.98rem;
+        .app-content-pass-box-top {
+          display: inherit;
+          align-items: center;
+          gap: 0.42rem;
+          .app-content-pass-box-top-circle {
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:active,
+            &:hover,
+            &:focus {
+              background-color: var(--app-main-icon-pass-back-background-color);
+            }
+            .app-content-pass-box-top-circle-icon {
+              font-size: clamp(0.843rem, 1.5vh, 0.42rem);
+              color: var(--app-main-down-color);
+            }
+          }
+          .app-content-pass-box-top-mail {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.73rem, 1.5vh, 0.42rem);
+          }
+        }
+        .app-content-pass-box-center {
+          width: 100%;
+          display: inherit;
+          flex-direction: column;
+          gap: 1.17rem;
+          .app-content-pass-box-center-text {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(1.2rem, 1.5vh, 0.5rem);
+            font-weight: normal;
+          }
+          #pass {
+            width: 100%;
+            height: 2.1rem;
+            border: unset;
+            outline: none;
+            border-radius: unset;
+            border-bottom: 1px solid var(--app-main-input-border-color);
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.73rem, 1.5vh, 0.5rem);
+            line-height: 1.2;
+            padding: 0.14rem;
+            margin-bottom: 0.78rem;
+            &:active,
+            &:focus {
+              border-color: var(--app-main-input-border-color-hover);
+            }
+          }
+          .app-content-pass-box-center-sub-text {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.64rem, 1.5vh, 0.46rem);
+            font-weight: normal;
+            color: var(--app-main-input-span-color);
+            cursor: pointer;
+            &:active,
+            &:hover {
+              color: var(--app-main-input-span-color-hover);
+            }
+          }
+        }
+        .app-content-pass-box-bottom {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          .app-content-pass-box-bottom-btn {
+            cursor: pointer;
+            color: var(--app-footer-color);
+            font-size: clamp(0.84rem, 1.5vh, 0.54rem);
+            letter-spacing: 0.03rem;
+            font-family: "Roboto", "Poppins", sans-serif;
+            font-weight: 400;
+            padding: 0.62rem 2.3rem;
+            background-color: var(--app-main-input-span-color);
+            border: 0px;
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: var(--app-main-input-span-color-hover);
+              transition: background-color 0.35s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    .app-down {
+      width: 93.5%;
+      height: 3.89rem;
+      padding: 0 2.6rem;
+      background-color: var(--app-main-box-background-color);
+      box-shadow: var(--app-main-box-shadow) 0px 2px 6px;
+      display: inherit;
+      align-items: center;
+      gap: 1.3rem;
+      &:hover,
+      &:focus,
+      &:active {
+        cursor: pointer;
+        background-color: var(--app-main-down-background-color);
+        box-shadow: var(--app-main-down-border-color) 0px 2px 6px;
+      }
+      .app-down-icon {
+        font-size: clamp(1.1rem, 1.5vh, 0.44rem);
+        color: var(--app-main-down-color);
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+      .app-down-text {
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(0.9rem, 1.5vh, 0.44rem);
+        color: var(--app-main-down-color);
+      }
+    }
+    .app-down-info {
+      display: none;
+    }
+    .app-down-info-show {
+      width: 93.5%;
+      height: 11.89rem;
+      padding: 2.25rem 2.6rem;
+      background-color: var(--app-main-box-background-color);
+      box-shadow: var(--app-main-box-shadow) 0px 2px 6px;
+      display: inherit;
+      flex-direction: column;
+      gap: 0.36rem;
+      cursor: pointer;
+      .app-down-info-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .app-down-info-top-text {
+          font-family: "PT Serif", serif;
+          font-weight: 600;
+          font-style: normal;
+          letter-spacing: 0.02rem;
+          font-size: clamp(0.84rem, 1.5vh, 0.44rem);
+          color: var(--app-main-down-color);
+        }
+        .app-down-info-top-icon {
+          font-size: clamp(1.13rem, 1.5vh, 0.44rem);
+          color: var(--app-main-down-color);
+          cursor: pointer;
+        }
+      }
+      .app-down-info-center {
+        display: flex;
+        flex-direction: column;
+        .app-down-info-center-text {
+          font-family: "Poppins", sans-serif;
+          font-size: clamp(0.64rem, 1.5vh, 0.34rem);
+          color: var(--app-main-down-color);
+          line-height: 0.95rem;
+        }
+        .app-down-info-center-box {
+          display: flex;
+          align-items: center;
+          .app-down-info-top-center-box-text {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.64rem, 1.5vh, 0.34rem);
+            color: var(--app-main-input-span-color);
+            line-height: 0.95rem;
+            cursor: pointer;
+            &:hover,
+            &:focus,
+            &:active {
+              color: var(--app-main-input-span-color-hover);
+              text-decoration: underline;
+            }
+          }
+          .app-down-info-top-center-box-icon {
+            font-size: clamp(0.8rem, 1.5vh, 0.4rem);
+            color: var(--app-main-input-span-color-green);
+            margin: 0.3rem;
+          }
+          .app-down-info-top-center-box-text-sub {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.69rem, 1.5vh, 0.4rem);
+            font-weight: 400;
+            color: var(--app-main-input-span-color-green);
+          }
+        }
+      }
+      .app-down-info-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.4rem;
+        .app-down-info-bottom-text {
+          font-family: "PT Serif", serif;
+          font-size: clamp(0.74rem, 1.5vh, 0.34rem);
+          font-weight: 600;
+          .app-down-info-hash-text {
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(0.7rem, 1.5vh, 0.34rem);
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+.app-footer {
+  width: 100dvw;
+  height: 3dvh;
+  min-height: 28px;
+  padding: 0 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--app-footer-background);
+  .app-nav {
+    display: inherit;
+    gap: 0.8rem;
+    .app-nav-text {
+      color: var(--app-footer-color);
+      text-decoration: none;
+      font-size: clamp(0.75rem, 1.5vh, 0.5rem);
+      font-family: "Roboto", Arial, sans-serif;
+      &:active,
+      &:focus,
+      &:hover {
+        color: var(--app-footer-color-hover);
+      }
+    }
+    .app-nav-icon {
+      cursor: pointer;
+      color: var(--app-footer-color);
+      font-size: clamp(0.75rem, 1.5vh, 0.5rem);
+      &:active,
+      &:focus,
+      &:hover {
+        color: var(--app-footer-color-hover);
+      }
+    }
+  }
+}
